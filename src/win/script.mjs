@@ -6,11 +6,13 @@ export function script(source) {
     tmpIn.puts(source);
     tmpIn.close();
     const tmpOut = std.tmpfile();
-    os.exec(['cscript', '/nologo', std.getenv('TEMP') + '/script.vbs'], { stdout: tmpOut.fileno() });
+    os.exec(['cscript', '/nologo', std.getenv('TEMP') + '/script.vbs'], { stdout: tmpOut.fileno()} );
     tmpOut.seek(0);
     const result = tmpOut.readAsString();
     tmpOut.close();
     os.remove(std.getenv('TEMP') + '/script.vbs');
+
+    console.log(`Result = ${result}`);
 
     return result;
 }

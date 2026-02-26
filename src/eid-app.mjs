@@ -7,6 +7,8 @@ console.log(os.platform);
 
 alert('Hello world!');
 
+console.log('Hello world!');
+
 if (!prompt('Continue ?')) {
     std.exit(0);
 }
