@@ -4,11 +4,12 @@
         "build": "node build.mjs"
     },
     "quickJs": {
+        "optimization": true,
         "modules": {
             "pkcs11": "app/quickjs-pkcs11.c"
         }
     },
     "devDependencies": {
-        "quickjs-zig": "^1.0.2"
+        "quickjs-zig": "^1.0.3"
     }
 }
