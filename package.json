@@ -1,5 +1,14 @@
 {
+    "name": "eid-app",
     "scripts": {
         "build": "node build.mjs"
+    },
+    "quickJs": {
+        "modules": {
+            "pkcs11": "app/quickjs-pkcs11.c"
+        }
+    },
+    "devDependencies": {
+        "quickjs-zig": "^1.0.1"
     }
 }
