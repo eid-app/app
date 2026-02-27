@@ -9,6 +9,6 @@
         }
     },
     "devDependencies": {
-        "quickjs-zig": "^1.0.1"
+        "quickjs-zig": "^1.0.2"
     }
 }

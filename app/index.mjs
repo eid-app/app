@@ -1,5 +1,6 @@
 import * as os from 'os';
 import * as pkcs11 from 'pkcs11';
+import { alert } from './dialogs/index.mjs';
 
 /**
  * Returns the standard path for the Belgium eID middleware.
@@ -16,6 +17,7 @@ function getBeidPath() {
 try {
     const libPath = getBeidPath();
     console.log("[DEBUG] Loading library:", libPath);
+    alert(`Loading library: ${libPath}`);
 
     const context = pkcs11.loadLibrary(libPath);
     if (context === null) {
