@@ -5,5 +5,5 @@ export function alert(message) {
 }
 
 export function prompt(message) {
-    return -1 === script(`display dialog ${JSON.stringify(message)}`).indexOf(':OK');
+    return -1 === script(`display dialog ${JSON.stringify(message)} buttons {"Yes", "No"}`).indexOf(':Yes');
 }
