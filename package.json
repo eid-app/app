@@ -7,13 +7,15 @@
         "optimization": true,
         "modules": {
             "pkcs11": "app/quickjs-pkcs11.c"
-        },
+        }
+    },
+    "bundler": {
         "icons": {
             "mac": "assets/AppIcon.icns"
         }
     },
     "devDependencies": {
-        "bundler-app": "^1.0.0",
+        "bundler-app": "^1.0.1",
         "quickjs-zig": "^1.0.4"
     }
 }
