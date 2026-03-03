@@ -2,6 +2,6 @@ export function alert(message) {
     console.log(message);
 }
 
-export function prompt(message) {
+export function confirm(message) {
     console.log(message);
 }

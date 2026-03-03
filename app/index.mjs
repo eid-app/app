@@ -1,8 +1,12 @@
 import * as os from 'os';
 import * as pkcs11 from 'pkcs11';
-import { alert } from './dialogs/index.mjs';
+import { alert, confirm } from './dialogs/index.mjs';
+import { parent } from './parent/parent.mjs';
 
-eidRead();
+const caller = parent();
+if (confirm(`${caller.name} wants to read your e-ID card contents. Do you agree?`)) {
+    eidRead();
+}
 
 /**
  * Returns the standard path for the Belgium eID middleware.

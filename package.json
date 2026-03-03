@@ -4,7 +4,7 @@
         "build": "npx quickjs-zig build && npx bundler-app"
     },
     "quickJs": {
-        "optimization": true,
+        "optimization": false,
         "modules": {
             "pkcs11": "app/quickjs-pkcs11.c"
         }
@@ -15,7 +15,7 @@
         }
     },
     "devDependencies": {
-        "bundler-app": "^1.0.1",
+        "bundler-app": "^1.0.4",
         "quickjs-zig": "^1.0.4"
     }
 }

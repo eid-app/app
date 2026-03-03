@@ -12,5 +12,7 @@ export function script(source) {
     tmpOut.close();
     tmpIn.close();
 
+    console.log(`Result = ${result}`);
+
     return result;
 }
