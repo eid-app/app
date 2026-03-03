@@ -1,15 +1,19 @@
 {
     "name": "eid-app",
     "scripts": {
-        "build": "node build.mjs"
+        "build": "npx quickjs-zig build && npx bundler-app"
     },
     "quickJs": {
         "optimization": true,
         "modules": {
             "pkcs11": "app/quickjs-pkcs11.c"
+        },
+        "icons": {
+            "mac": "assets/AppIcon.icns"
         }
     },
     "devDependencies": {
-        "quickjs-zig": "^1.0.3"
+        "bundler-app": "^1.0.0",
+        "quickjs-zig": "^1.0.4"
     }
 }
