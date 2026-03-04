@@ -6,6 +6,7 @@
     "quickJs": {
         "optimization": false,
         "modules": {
+            "base64": "app/quickjs-base64.c",
             "pkcs11": "app/quickjs-pkcs11.c"
         }
     },
@@ -15,7 +16,7 @@
         }
     },
     "devDependencies": {
-        "bundler-app": "^1.0.4",
+        "bundler-app": "^1.0.5",
         "quickjs-zig": "^1.0.4"
     }
 }
