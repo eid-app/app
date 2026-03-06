@@ -3,7 +3,7 @@ import * as std from 'std';
 import * as base64 from 'base64';
 import * as pkcs11 from 'pkcs11';
 import { alert, confirm } from './dialogs/index.mjs';
-import { parent } from './parent/parent.mjs';
+import { parent } from './parent/index.mjs';
 
 let url = scriptArgs.length > 1 ? scriptArgs.pop() : '';
 

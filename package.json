@@ -7,6 +7,7 @@
         "optimization": false,
         "modules": {
             "base64": "app/quickjs-base64.c",
+            "parent": "app/quickjs-parent.c",
             "pkcs11": "app/quickjs-pkcs11.c"
         }
     },
